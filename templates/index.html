@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delhi High Court Case Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('static/images/delhi high court img.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(255, 255, 255, 0.2);
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 60px auto;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        .note-link {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+
+        .note-link a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .note-link a:hover {
+            text-decoration: underline;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #4CAF50;
+        }
+
+        input, select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        select {
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        input:focus, select:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        button {
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .note {
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                width: 90%;
+                margin: 30px auto;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Delhi High Court Case Search</h2>
+
+        <div class="note-link">
+            🔗 <a href="https://delhihighcourt.nic.in/app/get-case-type-status" target="_blank">
+                Click here to view CAPTCHA from delhi high court
+            </a>
+        </div>
+
+        <form method="POST">
+            <label for="case_type">Case Type:</label>
+            <select name="case_type" id="case_type" required>
+                <option value="">-- Select Case Type --</option>
+                <option>BAIL APPLN.</option>
+                <option>W.P.(C)</option>
+                <option>CRL.A.</option>
+                <option>FAO</option>
+                <option>CS(OS)</option>
+                <option>MAC.APP.</option>
+                <option>ARB.P.</option>
+                <option>O.M.P.</option>
+                <option>O.M.P. (COMM)</option>
+                <option>O.M.P. (CONT.)</option>
+                <option>O.M.P. (E)</option>
+                <option>O.M.P. (I)</option>
+                <option>O.M.P. (T)</option>
+                <option>RFA</option>
+                <option>LPA</option>
+                <option>CRL.M.C.</option>
+                <option>CRL.REV.P.</option>
+                <option>TR.P.(C)</option>
+                <option>TR.P.(CRL.)</option>
+                <option>W.P.(CRL)</option>
+                <option>CONT.CAS(C)</option>
+                <option>CONT.CAS.(CRL)</option>
+                <option>CO.PET.</option>
+                <option>TEST.CAS.</option>
+                <option>MAT.APP.</option>
+                <option>MAT.CASE</option>
+                <option>REVIEW PET.</option>
+                <option>EX.P.</option>
+                <option>EX.F.A.</option>
+                <option>EX.S.A.</option>
+                <option>ITA</option>
+                <option>ITR</option>
+                <option>STC</option>
+                <option>ST.REF.</option>
+                <option>VAT APPEAL</option>
+                <option>WTA</option>
+                <option>WTC</option>
+                <option>WTR</option>
+            </select>
+
+            <label for="case_number">Case Number:</label>
+            <input type="text" name="case_number" id="case_number" placeholder="e.g. 12345" required>
+
+            <label for="filing_year">Filing Year:</label>
+            <input type="text" name="filing_year" id="filing_year" placeholder="e.g. 2023" required>
+
+            <label for="captcha">Enter CAPTCHA:</label>
+            <input type="text" name="captcha" id="captcha" placeholder="Enter CAPTCHA text" required>
+
+            <button type="submit">Search Case Status</button>
+
+            <p class="note">* Ensure Case Type matches official Delhi High Court dropdown</p>
+        </form>
+    </div>
+</body>
+</html>
