@@ -26,3 +26,28 @@ Court-Data-Fetcher/
 ├── test/
 ├── Dockerfile
 └── requirements.txt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
