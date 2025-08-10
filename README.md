@@ -28,13 +28,17 @@ Court-Data-Fetcher/
 └── requirements.txt
 
 
+<img width="1905" height="931" alt="image" src="https://github.com/user-attachments/assets/9757aaaa-a34f-497c-8a12-20e25e0d738c" />
+
+
+<img width="945" height="715" alt="ui_home" src="https://github.com/user-attachments/assets/b3c9aeaf-a376-400c-b711-e36f3457dca7" />
 
 
 
 
 
-
-
+<img width="776" ![delhi high court img](https://github.com/user-attachments/assets/52e1bce0-c47e-4302-b912-a677396aca1f)
+height="651" alt="ui_result" src="https://github.com/user-attachments/assets/86ea89d7-d0e1-4aa8-bedc-8c2389cd370f" />
 
 
 
