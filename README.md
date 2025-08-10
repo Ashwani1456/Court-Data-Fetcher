@@ -16,3 +16,13 @@ git clone https://github.com/Ashwani1456/Court-Data-Fetcher.git
 cd Court-Data-Fetcher
 pip install -r requirements.txt
 python app.py
+
+Folders:
+Court-Data-Fetcher/
+├── app.py
+├── scraper.py
+├── templates/
+├── static/
+├── test/
+├── Dockerfile
+└── requirements.txt
